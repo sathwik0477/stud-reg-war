@@ -3,7 +3,7 @@
 <head>
     <title>Student Registration</title>
 </head>
-<body bgcolor=blue text=white>
+<body bgcolor=green text=white>
     <h1>Course Enrollment Registration</h1>
     <form th:action="@{/register}" th:object="${student}" method="post">
         <p>Name: <input type="text" th:field="*{name}" /></p>
