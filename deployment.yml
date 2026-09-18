@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-reg-app
+  labels:
+    app: student-reg
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: student-reg
+  template:
+    metadata:
+      labels:
+        app: student-reg
+    spec:
+      containers:
+      - name: student-reg-container
+        image: sathwik0477/student-reg-war:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+
