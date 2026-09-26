@@ -1,5 +1,4 @@
-.......
-    <distributionManagement>
+ <distributionManagement>
         <repository>
                 <id>nexus-releases</id>
                 <name>Nexus Release Repository</name>
@@ -12,6 +11,4 @@
                 <url>http://50.19.11.103:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
-...........
 
