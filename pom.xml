@@ -1,4 +1,4 @@
- <distributionManagement>
+    <distributionManagement>
         <repository>
                 <id>nexus-releases</id>
                 <name>Nexus Release Repository</name>
